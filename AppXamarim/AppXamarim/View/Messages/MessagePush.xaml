@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           x:Class="WABRAPP.View.Messages.MessagePush"
+           xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             BackgroundColor="Transparent"
+             InputTransparent="True"
+             HasSystemPadding="False"
+             CloseWhenBackgroundIsClicked="False">
+           
+    
+     <pages:PopupPage.Animation>
+        <animations:MoveAnimation PositionIn="Left" PositionOut="Left"/>
+    </pages:PopupPage.Animation>
+    <StackLayout VerticalOptions="EndAndExpand" BackgroundColor="#1B5E20" HeightRequest="79">
+
+        <Grid  VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="65"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Margin="10, 8, 8, 8" x:Name="lblMensagem" Grid.Row="1" Grid.Column="0"  FontSize="16" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+        </Grid>
+
+    </StackLayout>
+</pages:PopupPage>

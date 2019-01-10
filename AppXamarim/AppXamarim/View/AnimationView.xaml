@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamarim.View.AnimationView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Translate -->
+            <xamanimation:StoryBoard 
+                x:Key="LogoAnimation4"    
+                Target="{x:Reference Logo}">
+                <xamanimation:TranslateToAnimation TranslateY="180"  TranslateX="95"     Duration="750" />
+                <xamanimation:TranslateToAnimation TranslateY="-180" TranslateX="-95"    Duration="750" />
+                <xamanimation:TranslateToAnimation TranslateY="0"    TranslateX="0"      Duration="750" />
+            </xamanimation:StoryBoard>
+
+            <!-- Rotate  -->
+            <xamanimation:StoryBoard 
+                x:Key="LogoAnimation1"    
+                Target="{x:Reference Logo}">
+                <xamanimation:RelRotateToAnimation   Rotation="360" Duration="750" />
+            </xamanimation:StoryBoard>
+
+            <!-- Fade   -->
+            <xamanimation:StoryBoard 
+                x:Key="LogoAnimation2"    
+                Target="{x:Reference Logo}">
+                <xamanimation:FadeInAnimation    Duration="750" />
+            </xamanimation:StoryBoard>
+
+            <!--  Heart-->
+            <xamanimation:StoryBoard 
+                x:Key="LogoAnimation3"    
+                Target="{x:Reference Logo}">
+                <xamanimation:HeartAnimation    Duration="750" />
+            </xamanimation:StoryBoard>
+
+         
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="Logo"  Source="login.png" VerticalOptions="CenterAndExpand"/>
+            <Button BackgroundColor="Navy" TextColor="White" Text="Translate" VerticalOptions="End">
+                <Button.Triggers>
+                    <EventTrigger Event="Clicked">
+                        <xamanimation:BeginAnimation Animation="{StaticResource LogoAnimation4}" />
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+
+            <Button BackgroundColor="Navy" TextColor="White" Text="Rotacao" VerticalOptions="End">
+                <Button.Triggers>
+                    <EventTrigger Event="Clicked">
+                        <xamanimation:BeginAnimation Animation="{StaticResource LogoAnimation1}" />
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+            <Button BackgroundColor="Navy" TextColor="White" Text="Fade in / fade out" VerticalOptions="End">
+                <Button.Triggers>
+                    <EventTrigger Event="Clicked">
+                        <xamanimation:BeginAnimation Animation="{StaticResource LogoAnimation2}" />
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+            <Button BackgroundColor="Navy" TextColor="White" Text="Coracao Batendo" VerticalOptions="End">
+                <Button.Triggers>
+                    <EventTrigger Event="Clicked">
+                        <xamanimation:BeginAnimation Animation="{StaticResource LogoAnimation3}" />
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+         
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

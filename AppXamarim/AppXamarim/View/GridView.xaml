@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamarim.View.GridView">
+
+    <Grid Padding="20" ColumnSpacing="10" RowSpacing="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="lblQuestion" Grid.ColumnSpan="2" Text="Question"></Label>
+        
+        <Button x:Name="btnTrue" 
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="True"
+                TextColor="White"
+                BackgroundColor="#0892D0" >
+        </Button>
+        
+        <Button x:Name="btnFalse" 
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="False"
+                TextColor="White"
+                BackgroundColor="#D0082E" >
+        </Button>
+
+        <Label x:Name="lblResponse" 
+               Grid.Row="2" 
+               Grid.Column="0" 
+               Text="Response">
+        </Label>
+
+        <Button x:Name="btnNext" 
+                Grid.Row="3" 
+                Grid.Column="1" 
+                Text="Next" 
+                TextColor="White" 
+                BackgroundColor="#08D046">
+        </Button>
+    </Grid>
+</ContentPage>

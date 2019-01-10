@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
+             x:Class="AppXamarim.View.LottieAnimationView">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <forms:AnimationView 
+                    x:Name="formsanimation"
+                    Animation="process_complete.json" 
+                    IsPlaying="true"
+                    IsVisible="true"
+                    Loop="false"
+                    HeightRequest="100"
+                    MinimumHeightRequest="100"
+                    AutoPlay="true"
+                    VerticalOptions="FillAndExpand" 
+                    HorizontalOptions="FillAndExpand" 
+                 />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

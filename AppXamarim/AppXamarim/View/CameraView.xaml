@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamarim.View.CameraView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Tirar Foto" BackgroundColor="Blue" TextColor="White" Command="{Binding TirarFotoCommand}" FontSize="20" />
+            <Button Text="Escolher Foto" BackgroundColor="Blue" TextColor="White" Command="{Binding EscolherFotoCommand}" FontSize="20" />
+            <Button Text="Gravar Video" BackgroundColor="Blue" TextColor="White" Command="{Binding GravarVideoCommand}" FontSize="20" />
+            <Button Text="Escolher Video" BackgroundColor="Blue" TextColor="White" Command="{Binding EscolherVideoCommand}" FontSize="20" />
+            <Image  Source="{Binding MinhaImagem}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

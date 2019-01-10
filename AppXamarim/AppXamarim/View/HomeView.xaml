@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             x:Class="AppXamarim.View.HomeView">
+        <StackLayout Padding="15">
+            <flv:FlowListView
+                RowHeight="100"
+                HeightRequest="400"
+                FlowColumnCount="1"
+                FlowColumnExpand="First"
+                SeparatorVisibility="None"
+                BackgroundColor="Transparent"
+                HasUnevenRows="False"
+                IsInNativeLayout="False"
+                FlowItemTappedCommand="{Binding ItemSelectedCommand}"
+                FlowItemsSource="{Binding ItensMenu}" >
+                <flv:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        <Frame Style="{StaticResource FrameStyle}">
+                            <Label Text="{Binding Descricao}"
+                                   Style="{StaticResource LabelStyle}"
+                                   HorizontalOptions="Center"
+                                   VerticalTextAlignment="Center"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="20">
+                            </Label>
+                        </Frame>
+                    </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>
+            </flv:FlowListView>
+        </StackLayout>
+</ContentPage>
