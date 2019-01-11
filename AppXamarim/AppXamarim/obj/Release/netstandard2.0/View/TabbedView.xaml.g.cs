@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppXamarim.View.HomeView.xaml", "View/HomeView.xaml", typeof(global::AppXamarim.View.HomeView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppXamarim.View.TabbedView.xaml", "View/TabbedView.xaml", typeof(global::AppXamarim.View.TabbedView))]
 
 namespace AppXamarim.View {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\HomeView.xaml")]
-    public partial class HomeView : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\TabbedView.xaml")]
+    public partial class TabbedView : global::Naxam.Controls.Forms.TopTabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HomeView));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TabbedView));
         }
     }
 }

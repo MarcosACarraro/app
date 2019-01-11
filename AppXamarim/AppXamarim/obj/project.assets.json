@@ -167,7 +167,7 @@
           "lib/netstandard2.0/Xamanimation.dll": {}
         }
       },
-      "Xamarin.FFImageLoading/2.4.3.840": {
+      "Xamarin.FFImageLoading/2.4.4.859": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/FFImageLoading.Platform.dll": {},
@@ -178,10 +178,10 @@
           "lib/netstandard1.0/FFImageLoading.dll": {}
         }
       },
-      "Xamarin.FFImageLoading.Forms/2.4.3.840": {
+      "Xamarin.FFImageLoading.Forms/2.4.4.859": {
         "type": "package",
         "dependencies": {
-          "Xamarin.FFImageLoading": "2.4.3.840",
+          "Xamarin.FFImageLoading": "2.4.4.859",
           "Xamarin.Forms": "2.4.0"
         },
         "compile": {
@@ -191,7 +191,7 @@
           "lib/netstandard1.0/FFImageLoading.Forms.dll": {}
         }
       },
-      "Xamarin.Forms/3.3.0.912540": {
+      "Xamarin.Forms/3.4.0.1009999": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -207,16 +207,30 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
+      },
+      "Xamarin.Forms.Maps/3.4.0.1009999": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1009999"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.Design.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.Design.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {}
+        }
       }
     }
   },
   "libraries": {
     "CarouselView.FormsPlugin/5.2.0": {
-      "sha512": "rN9CRpr/xkp0F+1oBdqtPwu7g2D6MZXl7gSuUoxGWIjCQKaiCh0cqY2WbRY2UbkpliPiNpopjQ+Ptj0XoplTJw==",
+      "sha512": "h849lqz0wvmpyiXqCrN7EW+cCGqK5chcefCfS55CkoGMMQx238QWNknUTOl/CvIdZ4bgs0Oztb7kamYXDlQ5mQ==",
       "type": "package",
       "path": "carouselview.formsplugin/5.2.0",
       "files": [
-        ".signature.p7s",
+        ".nupkg.metadata",
         "carouselview.formsplugin.5.2.0.nupkg.sha512",
         "carouselview.formsplugin.nuspec",
         "lib/MonoAndroid/CarouselView.FormsPlugin.Abstractions.dll",
@@ -263,10 +277,12 @@
       ]
     },
     "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
-      "sha512": "n/TIbW3a7q/h5wA5vt8VfkN3eecJN8nMlPVu3NS7hvFODg0YqFHXDgbX1O/a9agcuk5Km6DZqJqpxpcYRS9sOQ==",
+      "sha512": "zoXUKFvB+M3XIMrmSWBIb3Wu3zKR7a/moQAuCpJ2bKbDcff1B6/D3MNAnhEoFyWf+EQ9QGrok3y8jrvNnp1VdA==",
       "type": "package",
       "path": "dltoolkit.forms.controls.flowlistview/2.0.11",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "dltoolkit.forms.controls.flowlistview.2.0.11.nupkg.sha512",
         "dltoolkit.forms.controls.flowlistview.nuspec",
         "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll",
@@ -274,11 +290,11 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
-        ".signature.p7s",
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -420,10 +436,12 @@
       ]
     },
     "Naxam.TopTabbedPage.Forms/0.0.3.3": {
-      "sha512": "+AS+6oO4MM506vOr5b4FpIKTuIYiVen34ZvEsH5cJHw0LJ5B+HyGwxh/WBfSXCVuHvxuBRaDepX5sT3WeYnp2A==",
+      "sha512": "EL9DUyM6G0aDO5yOO29b3nxdEvB9H6BtcX6N3tLl93it5P1XjitUwliX3KOyJUK2mCaa4PCOiZsZsJsTOgmpHg==",
       "type": "package",
       "path": "naxam.toptabbedpage.forms/0.0.3.3",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "lib/Xamarin.iOS10/Naxam.TopTabbedPage.Forms.dll",
         "lib/Xamarin.iOS10/Naxam.TopTabbedPage.Platform.iOS.dll",
         "lib/portable-net45+wp80+win8+wpa81/Naxam.TopTabbedPage.Forms.dll",
@@ -432,11 +450,11 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "R73gEjqCkI2Nw/IlN8QvcgPNklqQiPowp47JwvW0Bnp/RZnjN4UrJwEvWVJWRK1MsQ+HIfGe9i4aQlfK+ei9jA==",
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
-        ".signature.p7s",
+        ".nupkg.metadata",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -611,13 +629,13 @@
       ]
     },
     "Rg.Plugins.Popup/1.1.4.168": {
-      "sha512": "ZI+sP0zWYGbxuc2IzZ6oug9FdCvZaxQ+bfQurmFBHBLeRvWqV9SXLnnagxWKymUYBqx73t4xz2DRbvNsm2kHEw==",
+      "sha512": "pARxyFFrnOoCZfRbAiE8v3+8py/sH5SX8NJAjfaydJJO3cm13yNaNw8EelEONJVQY2T0zFhCfZSc4CDjjaSylQ==",
       "type": "package",
       "path": "rg.plugins.popup/1.1.4.168",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
-        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll.mdb",
         "lib/MonoAndroid/Rg.Plugins.Popup.Droid.pdb",
         "lib/MonoAndroid/Rg.Plugins.Popup.dll",
         "lib/MonoAndroid/Rg.Plugins.Popup.pdb",
@@ -772,10 +790,11 @@
       ]
     },
     "Xam.Plugin.Media/4.0.1.5": {
-      "sha512": "PxL0vcTXpS79l2KgtaJBShcPVMRK2HC5J08vG6hKTC7hk5+3RjgFrdX0N6Gd4oF8pxVxV2ia7rhYnjxRCMWZtw==",
+      "sha512": "a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
       "type": "package",
       "path": "xam.plugin.media/4.0.1.5",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/monoandroid71/Plugin.Media.dll",
         "lib/monoandroid71/Plugin.Media.xml",
@@ -806,11 +825,12 @@
         "xamanimation.nuspec"
       ]
     },
-    "Xamarin.FFImageLoading/2.4.3.840": {
-      "sha512": "ukQEbgTowlSmjrTs3HYaBPzE9dn9lkJOcuqFPcAQ+zoBMh9u1JZm9S1DmZTSr9KPwhjg0n2NNn+rsAMehHzdnQ==",
+    "Xamarin.FFImageLoading/2.4.4.859": {
+      "sha512": "/U71/oKIKL+ompfmdYsIYYi3+r3Sj+81zUxg29M1RuNPywKsPKbHIndGiRw8bEYi1CX6meeidIeBpetjnN/ETw==",
       "type": "package",
-      "path": "xamarin.ffimageloading/2.4.3.840",
+      "path": "xamarin.ffimageloading/2.4.4.859",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/MonoAndroid10/FFImageLoading.Platform.dll",
         "lib/MonoAndroid10/FFImageLoading.Platform.pdb",
@@ -864,15 +884,16 @@
         "lib/wpa81/FFImageLoading.dll",
         "lib/wpa81/FFImageLoading.pdb",
         "lib/wpa81/FFImageLoading.xml",
-        "xamarin.ffimageloading.2.4.3.840.nupkg.sha512",
+        "xamarin.ffimageloading.2.4.4.859.nupkg.sha512",
         "xamarin.ffimageloading.nuspec"
       ]
     },
-    "Xamarin.FFImageLoading.Forms/2.4.3.840": {
-      "sha512": "Wych7662xwrXu2FZvUE+cc2ajPyhsuK2aNTHEvvcn880omgC9omtsQTpmbezUxtE6rsCXmVEp9rRPWktrBCfZQ==",
+    "Xamarin.FFImageLoading.Forms/2.4.4.859": {
+      "sha512": "OGCxTJQ7IlbRC7jo6HsdAkTdShjkED2aZXRFX1zeWJ9+9R8bm+FseLaWXVdUyKAD9jisQj4TpGHXsv9ZmtJ3CA==",
       "type": "package",
-      "path": "xamarin.ffimageloading.forms/2.4.3.840",
+      "path": "xamarin.ffimageloading.forms/2.4.4.859",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/MonoAndroid10/FFImageLoading.Forms.Platform.dll",
         "lib/MonoAndroid10/FFImageLoading.Forms.Platform.pdb",
@@ -910,28 +931,29 @@
         "lib/uap/FFImageLoading.Forms.dll",
         "lib/uap/FFImageLoading.Forms.pdb",
         "lib/uap/FFImageLoading.Forms.xml",
-        "xamarin.ffimageloading.forms.2.4.3.840.nupkg.sha512",
+        "xamarin.ffimageloading.forms.2.4.4.859.nupkg.sha512",
         "xamarin.ffimageloading.forms.nuspec"
       ]
     },
-    "Xamarin.Forms/3.3.0.912540": {
-      "sha512": "Vm3JZ2Vd6u77eIw7XYQY6Ok89DghibebbdrUX/I1z6aJ9ZMJFBJjqwsIlYbpN4BNCm08UqaieG8BrqArJpIMnQ==",
+    "Xamarin.Forms/3.4.0.1009999": {
+      "sha512": "pgqRxgD23FJHG2B7zOxf4Fm+KYgoWctUJp8hNtdZgAt43RIiK3VgM11wJf3S0SkMIsXQCUL0yYQmR8gR/njltA==",
       "type": "package",
-      "path": "xamarin.forms/3.3.0.912540",
+      "path": "xamarin.forms/3.4.0.1009999",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "build/Xamarin.Forms.DefaultItems.props",
         "build/Xamarin.Forms.DefaultItems.targets",
         "build/Xamarin.Forms.props",
         "build/Xamarin.Forms.targets",
-        "build/net461/Mono.Cecil.Mdb.dll",
-        "build/net461/Mono.Cecil.Pdb.dll",
-        "build/net461/Mono.Cecil.Rocks.dll",
-        "build/net461/Mono.Cecil.dll",
-        "build/net461/System.CodeDom.dll",
-        "build/net461/Xamarin.Forms.Build.Tasks.dll",
-        "build/net461/Xamarin.Forms.Core.dll",
-        "build/net461/Xamarin.Forms.Xaml.dll",
+        "build/net46/Mono.Cecil.Mdb.dll",
+        "build/net46/Mono.Cecil.Pdb.dll",
+        "build/net46/Mono.Cecil.Rocks.dll",
+        "build/net46/Mono.Cecil.dll",
+        "build/net46/System.ValueTuple.dll",
+        "build/net46/Xamarin.Forms.Build.Tasks.dll",
+        "build/net46/Xamarin.Forms.Core.dll",
+        "build/net46/Xamarin.Forms.Xaml.dll",
         "build/netstandard2.0/Mono.Cecil.Mdb.dll",
         "build/netstandard2.0/Mono.Cecil.Pdb.dll",
         "build/netstandard2.0/Mono.Cecil.Rocks.dll",
@@ -1036,6 +1058,7 @@
         "lib/uap10.0/Design/Xamarin.Forms.Core.Design.dll",
         "lib/uap10.0/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/uap10.0/Xamarin.Forms.Core.dll",
+        "lib/uap10.0/Xamarin.Forms.Core.pdb",
         "lib/uap10.0/Xamarin.Forms.Core.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
@@ -1054,9 +1077,42 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.3.0.912540.nupkg.sha512",
+        "xamarin.forms.3.4.0.1009999.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Maps/3.4.0.1009999": {
+      "sha512": "SUK6ARihgGbu0zrF9C8ceQzplHMaTfAEBzVbmQl0zGYNUlcb8dpM6h1XtV03VtmD3w65KAxdlUwGIfgFOqa4Tg==",
+      "type": "package",
+      "path": "xamarin.forms.maps/3.4.0.1009999",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.Design.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.Design.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.xml",
+        "lib/tizen40/Xamarin.Forms.Maps.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.3.4.0.1009999.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
       ]
     }
   },
@@ -1075,29 +1131,29 @@
       "Xam.Plugin.DeviceInfo >= 4.0.0.13",
       "Xam.Plugin.Media >= 4.0.1.5",
       "Xamanimation >= 1.2.0",
-      "Xamarin.FFImageLoading >= 2.4.3.840",
-      "Xamarin.FFImageLoading.Forms >= 2.4.3.840",
-      "Xamarin.Forms >= 3.3.0.912540"
+      "Xamarin.FFImageLoading.Forms >= 2.4.4.859",
+      "Xamarin.Forms >= 3.4.0.1009999",
+      "Xamarin.Forms.Maps >= 3.4.0.1009999"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marco\\.nuget\\packages\\": {},
+    "C:\\Users\\marcos.carraro\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xamarimAula\\App\\AppXamarim\\AppXamarim\\AppXamarim.csproj",
+      "projectUniqueName": "C:\\gitHub\\MarcosACarraro\\app\\AppXamarim\\AppXamarim\\AppXamarim.csproj",
       "projectName": "AppXamarim",
-      "projectPath": "C:\\xamarimAula\\App\\AppXamarim\\AppXamarim\\AppXamarim.csproj",
-      "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-      "outputPath": "C:\\xamarimAula\\App\\AppXamarim\\AppXamarim\\obj\\",
+      "projectPath": "C:\\gitHub\\MarcosACarraro\\app\\AppXamarim\\AppXamarim\\AppXamarim.csproj",
+      "packagesPath": "C:\\Users\\marcos.carraro\\.nuget\\packages\\",
+      "outputPath": "C:\\gitHub\\MarcosACarraro\\app\\AppXamarim\\AppXamarim\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marcos.carraro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1175,17 +1231,17 @@
             "target": "Package",
             "version": "[1.2.0, )"
           },
-          "Xamarin.FFImageLoading": {
-            "target": "Package",
-            "version": "[2.4.3.840, )"
-          },
           "Xamarin.FFImageLoading.Forms": {
             "target": "Package",
-            "version": "[2.4.3.840, )"
+            "version": "[2.4.4.859, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.3.0.912540, )"
+            "version": "[3.4.0.1009999, )"
+          },
+          "Xamarin.Forms.Maps": {
+            "target": "Package",
+            "version": "[3.4.0.1009999, )"
           }
         },
         "imports": [

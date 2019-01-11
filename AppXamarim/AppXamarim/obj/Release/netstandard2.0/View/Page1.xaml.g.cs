@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppXamarim.View.HomeView.xaml", "View/HomeView.xaml", typeof(global::AppXamarim.View.HomeView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppXamarim.View.Page1.xaml", "View/Page1.xaml", typeof(global::AppXamarim.View.Page1))]
 
 namespace AppXamarim.View {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\HomeView.xaml")]
-    public partial class HomeView : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Page1.xaml")]
+    public partial class Page1 : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HomeView));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page1));
         }
     }
 }

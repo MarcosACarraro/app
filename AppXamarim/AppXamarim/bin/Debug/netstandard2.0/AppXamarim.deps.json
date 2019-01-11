@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "fd47ad7302984c1990daf0211be2d98a934e2f56"
+    "signature": "365d15c3f78012b3815e18a48495ed60e330aeb5"
   },
   "compilationOptions": {},
   "targets": {
@@ -22,9 +22,9 @@
           "Xam.Plugin.DeviceInfo": "4.0.0.13",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamanimation": "1.2.0",
-          "Xamarin.FFImageLoading": "2.4.3.840",
-          "Xamarin.FFImageLoading.Forms": "2.4.3.840",
-          "Xamarin.Forms": "3.3.0.912540"
+          "Xamarin.FFImageLoading.Forms": "2.4.4.859",
+          "Xamarin.Forms": "3.4.0.1009999",
+          "Xamarin.Forms.Maps": "3.4.0.1009999"
         },
         "runtime": {
           "AppXamarim.dll": {}
@@ -40,7 +40,7 @@
       },
       "Com.Airbnb.Xamarin.Forms.Lottie/2.5.4": {
         "dependencies": {
-          "Xamarin.Forms": "3.3.0.912540"
+          "Xamarin.Forms": "3.4.0.1009999"
         },
         "runtime": {
           "lib/netstandard2.0/Lottie.Forms.dll": {
@@ -51,7 +51,7 @@
       },
       "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
         "dependencies": {
-          "Xamarin.Forms": "3.3.0.912540"
+          "Xamarin.Forms": "3.4.0.1009999"
         },
         "runtime": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll": {
@@ -84,7 +84,7 @@
       },
       "Naxam.TopTabbedPage.Forms/0.0.3.3": {
         "dependencies": {
-          "Xamarin.Forms": "3.3.0.912540"
+          "Xamarin.Forms": "3.4.0.1009999"
         },
         "runtime": {
           "lib/portable-net45+wp80+win8+wpa81/Naxam.TopTabbedPage.Forms.dll": {
@@ -116,7 +116,7 @@
       },
       "Rg.Plugins.Popup/1.1.4.168": {
         "dependencies": {
-          "Xamarin.Forms": "3.3.0.912540"
+          "Xamarin.Forms": "3.4.0.1009999"
         },
         "runtime": {
           "lib/netstandard1.0/Rg.Plugins.Popup.dll": {
@@ -166,7 +166,7 @@
       },
       "Xamanimation/1.2.0": {
         "dependencies": {
-          "Xamarin.Forms": "3.3.0.912540"
+          "Xamarin.Forms": "3.4.0.1009999"
         },
         "runtime": {
           "lib/netstandard2.0/Xamanimation.dll": {
@@ -175,31 +175,31 @@
           }
         }
       },
-      "Xamarin.FFImageLoading/2.4.3.840": {
+      "Xamarin.FFImageLoading/2.4.4.859": {
         "runtime": {
           "lib/netstandard1.0/FFImageLoading.Platform.dll": {
-            "assemblyVersion": "2.4.3.840",
-            "fileVersion": "2.4.3.840"
+            "assemblyVersion": "2.4.4.859",
+            "fileVersion": "2.4.4.859"
           },
           "lib/netstandard1.0/FFImageLoading.dll": {
-            "assemblyVersion": "2.4.3.840",
-            "fileVersion": "2.4.3.840"
+            "assemblyVersion": "2.4.4.859",
+            "fileVersion": "2.4.4.859"
           }
         }
       },
-      "Xamarin.FFImageLoading.Forms/2.4.3.840": {
+      "Xamarin.FFImageLoading.Forms/2.4.4.859": {
         "dependencies": {
-          "Xamarin.FFImageLoading": "2.4.3.840",
-          "Xamarin.Forms": "3.3.0.912540"
+          "Xamarin.FFImageLoading": "2.4.4.859",
+          "Xamarin.Forms": "3.4.0.1009999"
         },
         "runtime": {
           "lib/netstandard1.0/FFImageLoading.Forms.dll": {
-            "assemblyVersion": "2.4.3.840",
-            "fileVersion": "2.4.3.840"
+            "assemblyVersion": "2.4.4.859",
+            "fileVersion": "2.4.4.859"
           }
         }
       },
-      "Xamarin.Forms/3.3.0.912540": {
+      "Xamarin.Forms/3.4.0.1009999": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
@@ -210,6 +210,21 @@
             "fileVersion": "1.0.0.0"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms.Maps/3.4.0.1009999": {
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1009999"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.Design.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.0"
           }
@@ -226,7 +241,7 @@
     "CarouselView.FormsPlugin/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rN9CRpr/xkp0F+1oBdqtPwu7g2D6MZXl7gSuUoxGWIjCQKaiCh0cqY2WbRY2UbkpliPiNpopjQ+Ptj0XoplTJw==",
+      "sha512": "sha512-h849lqz0wvmpyiXqCrN7EW+cCGqK5chcefCfS55CkoGMMQx238QWNknUTOl/CvIdZ4bgs0Oztb7kamYXDlQ5mQ==",
       "path": "carouselview.formsplugin/5.2.0",
       "hashPath": "carouselview.formsplugin.5.2.0.nupkg.sha512"
     },
@@ -240,14 +255,14 @@
     "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-n/TIbW3a7q/h5wA5vt8VfkN3eecJN8nMlPVu3NS7hvFODg0YqFHXDgbX1O/a9agcuk5Km6DZqJqpxpcYRS9sOQ==",
+      "sha512": "sha512-zoXUKFvB+M3XIMrmSWBIb3Wu3zKR7a/moQAuCpJ2bKbDcff1B6/D3MNAnhEoFyWf+EQ9QGrok3y8jrvNnp1VdA==",
       "path": "dltoolkit.forms.controls.flowlistview/2.0.11",
       "hashPath": "dltoolkit.forms.controls.flowlistview.2.0.11.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
     },
@@ -268,14 +283,14 @@
     "Naxam.TopTabbedPage.Forms/0.0.3.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+AS+6oO4MM506vOr5b4FpIKTuIYiVen34ZvEsH5cJHw0LJ5B+HyGwxh/WBfSXCVuHvxuBRaDepX5sT3WeYnp2A==",
+      "sha512": "sha512-EL9DUyM6G0aDO5yOO29b3nxdEvB9H6BtcX6N3tLl93it5P1XjitUwliX3KOyJUK2mCaa4PCOiZsZsJsTOgmpHg==",
       "path": "naxam.toptabbedpage.forms/0.0.3.3",
       "hashPath": "naxam.toptabbedpage.forms.0.0.3.3.nupkg.sha512"
     },
     "NETStandard.Library/2.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-R73gEjqCkI2Nw/IlN8QvcgPNklqQiPowp47JwvW0Bnp/RZnjN4UrJwEvWVJWRK1MsQ+HIfGe9i4aQlfK+ei9jA==",
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
@@ -296,7 +311,7 @@
     "Rg.Plugins.Popup/1.1.4.168": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZI+sP0zWYGbxuc2IzZ6oug9FdCvZaxQ+bfQurmFBHBLeRvWqV9SXLnnagxWKymUYBqx73t4xz2DRbvNsm2kHEw==",
+      "sha512": "sha512-pARxyFFrnOoCZfRbAiE8v3+8py/sH5SX8NJAjfaydJJO3cm13yNaNw8EelEONJVQY2T0zFhCfZSc4CDjjaSylQ==",
       "path": "rg.plugins.popup/1.1.4.168",
       "hashPath": "rg.plugins.popup.1.1.4.168.nupkg.sha512"
     },
@@ -317,7 +332,7 @@
     "Xam.Plugin.Media/4.0.1.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PxL0vcTXpS79l2KgtaJBShcPVMRK2HC5J08vG6hKTC7hk5+3RjgFrdX0N6Gd4oF8pxVxV2ia7rhYnjxRCMWZtw==",
+      "sha512": "sha512-a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
       "path": "xam.plugin.media/4.0.1.5",
       "hashPath": "xam.plugin.media.4.0.1.5.nupkg.sha512"
     },
@@ -328,26 +343,33 @@
       "path": "xamanimation/1.2.0",
       "hashPath": "xamanimation.1.2.0.nupkg.sha512"
     },
-    "Xamarin.FFImageLoading/2.4.3.840": {
+    "Xamarin.FFImageLoading/2.4.4.859": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ukQEbgTowlSmjrTs3HYaBPzE9dn9lkJOcuqFPcAQ+zoBMh9u1JZm9S1DmZTSr9KPwhjg0n2NNn+rsAMehHzdnQ==",
-      "path": "xamarin.ffimageloading/2.4.3.840",
-      "hashPath": "xamarin.ffimageloading.2.4.3.840.nupkg.sha512"
+      "sha512": "sha512-/U71/oKIKL+ompfmdYsIYYi3+r3Sj+81zUxg29M1RuNPywKsPKbHIndGiRw8bEYi1CX6meeidIeBpetjnN/ETw==",
+      "path": "xamarin.ffimageloading/2.4.4.859",
+      "hashPath": "xamarin.ffimageloading.2.4.4.859.nupkg.sha512"
     },
-    "Xamarin.FFImageLoading.Forms/2.4.3.840": {
+    "Xamarin.FFImageLoading.Forms/2.4.4.859": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Wych7662xwrXu2FZvUE+cc2ajPyhsuK2aNTHEvvcn880omgC9omtsQTpmbezUxtE6rsCXmVEp9rRPWktrBCfZQ==",
-      "path": "xamarin.ffimageloading.forms/2.4.3.840",
-      "hashPath": "xamarin.ffimageloading.forms.2.4.3.840.nupkg.sha512"
+      "sha512": "sha512-OGCxTJQ7IlbRC7jo6HsdAkTdShjkED2aZXRFX1zeWJ9+9R8bm+FseLaWXVdUyKAD9jisQj4TpGHXsv9ZmtJ3CA==",
+      "path": "xamarin.ffimageloading.forms/2.4.4.859",
+      "hashPath": "xamarin.ffimageloading.forms.2.4.4.859.nupkg.sha512"
     },
-    "Xamarin.Forms/3.3.0.912540": {
+    "Xamarin.Forms/3.4.0.1009999": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Vm3JZ2Vd6u77eIw7XYQY6Ok89DghibebbdrUX/I1z6aJ9ZMJFBJjqwsIlYbpN4BNCm08UqaieG8BrqArJpIMnQ==",
-      "path": "xamarin.forms/3.3.0.912540",
-      "hashPath": "xamarin.forms.3.3.0.912540.nupkg.sha512"
+      "sha512": "sha512-pgqRxgD23FJHG2B7zOxf4Fm+KYgoWctUJp8hNtdZgAt43RIiK3VgM11wJf3S0SkMIsXQCUL0yYQmR8gR/njltA==",
+      "path": "xamarin.forms/3.4.0.1009999",
+      "hashPath": "xamarin.forms.3.4.0.1009999.nupkg.sha512"
+    },
+    "Xamarin.Forms.Maps/3.4.0.1009999": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SUK6ARihgGbu0zrF9C8ceQzplHMaTfAEBzVbmQl0zGYNUlcb8dpM6h1XtV03VtmD3w65KAxdlUwGIfgFOqa4Tg==",
+      "path": "xamarin.forms.maps/3.4.0.1009999",
+      "hashPath": "xamarin.forms.maps.3.4.0.1009999.nupkg.sha512"
     }
   }
 }
