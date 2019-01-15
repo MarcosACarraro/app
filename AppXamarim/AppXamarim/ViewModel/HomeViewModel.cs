@@ -66,6 +66,9 @@ namespace AppXamarim.ViewModel
                         case 10:
                             await _navigation.NavigateToAsync<GridViewModel>();
                             break;
+                        case 11:
+                            await _navigation.NavigateToAsync<LayOutViewModel>();
+                            break;
                         default:
                             break;
                     }

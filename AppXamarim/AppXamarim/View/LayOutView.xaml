@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamarim.View.LayOutView"
+             BackgroundColor="{StaticResource white}">
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!--Header Background-->
+        <BoxView BackgroundColor="White" 
+                 Grid.Row="0">
+        </BoxView>
+        <Image Source="background.png" Aspect="AspectFill"></Image>
+        
+        <!--profile image-->
+        <StackLayout Grid.Row="1" Padding="0,50,0,0" >
+            <Label Text="Marcos Carraro"  Style="{StaticResource ProfileNameLabel}"></Label>
+            <Label Text="Desenvolvedor .NET" HorizontalTextAlignment="Center" Style="{StaticResource ProfileTagLabel}"></Label>
+        </StackLayout>
+        
+        <!--social stats-->
+        <Grid Grid.Row="2" Margin="0,30" ColumnSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Column="0">
+                <Label Text="33" Style="{StaticResource StatsNumberLabel}"></Label>
+                <Label Text="likes" Style="{StaticResource StatsCaptionLabel}"></Label>
+            </StackLayout>
+            <StackLayout Grid.Column="1">
+                <Label Text="55" Style="{StaticResource StatsNumberLabel}"></Label>
+                <Label Text="Following" Style="{StaticResource StatsCaptionLabel}"></Label>
+            </StackLayout>
+            <StackLayout Grid.Column="2">
+                <Label Text="80" Style="{StaticResource StatsNumberLabel}"></Label>
+                <Label Text="Followers" Style="{StaticResource StatsCaptionLabel}"></Label>
+            </StackLayout>
+        </Grid>
+
+        <!--profile description-->
+        <Label Grid.Row="3" 
+               Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." 
+               Style="{StaticResource MainBodyLabel}"
+               Margin="20,0"
+               >
+        </Label>
+
+        <!--follow button-->
+        <Button Grid.Row="4"
+            Text="Follow" Style="{StaticResource FollowButton}" 
+            Margin="20" >
+        </Button>
+
+        <Image Source="profile.jpg" 
+               HorizontalOptions="Center" 
+               VerticalOptions="End" 
+               WidthRequest="100" 
+               HeightRequest="100" 
+               TranslationY="50">
+         </Image>
+     
+    </Grid>
+</ContentPage>
+

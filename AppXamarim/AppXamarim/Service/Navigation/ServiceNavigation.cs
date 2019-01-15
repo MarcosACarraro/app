@@ -128,6 +128,7 @@ namespace AppXamarim.Service.Navigation
             _mapping.Add(typeof(LoginViewModel), typeof(LoginView));
             _mapping.Add(typeof(GridViewModel), typeof(GridView));
             _mapping.Add(typeof(ReviewPageViewModel), typeof(ReviewPageView));
+            _mapping.Add(typeof(LayOutViewModel), typeof(LayOutView));
         }
     }
 }

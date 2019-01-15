@@ -39,6 +39,7 @@ namespace AppXamarim.ViewModel.ViewModelLocator
             _container.RegisterType<LoginViewModel>();
             _container.RegisterType<GridViewModel>();
             _container.RegisterType<ReviewPageViewModel>();
+            _container.RegisterType<LayOutViewModel>();
         }
 
         public T Resolve<T>()

@@ -7,7 +7,7 @@
             <flv:FlowListView
                 RowHeight="100"
                 HeightRequest="400"
-                FlowColumnCount="1"
+                FlowColumnCount="2"
                 FlowColumnExpand="First"
                 SeparatorVisibility="None"
                 BackgroundColor="Transparent"

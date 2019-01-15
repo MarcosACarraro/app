@@ -56,6 +56,7 @@ C:\gitHub\MarcosACarraro\app\AppXamarim\AppXamarim\obj\Debug\netstandard2.0\AppX
 C:\gitHub\MarcosACarraro\app\AppXamarim\AppXamarim\bin\Debug\netstandard2.0\AppXamarim.deps.json
 C:\gitHub\MarcosACarraro\app\AppXamarim\AppXamarim\bin\Debug\netstandard2.0\AppXamarim.dll
 C:\gitHub\MarcosACarraro\app\AppXamarim\AppXamarim\bin\Debug\netstandard2.0\AppXamarim.pdb
-C:\gitHub\MarcosACarraro\app\AppXamarim\AppXamarim\obj\Debug\netstandard2.0\AppXamarim.csprojAssemblyReference.cache
 C:\gitHub\MarcosACarraro\app\AppXamarim\AppXamarim\obj\Debug\netstandard2.0\XamlC.stamp
 C:\gitHub\MarcosACarraro\app\AppXamarim\AppXamarim\obj\Debug\netstandard2.0\View\ReviewPageView.xaml.g.cs
+C:\gitHub\MarcosACarraro\app\AppXamarim\AppXamarim\obj\Debug\netstandard2.0\View\LayOutView.xaml.g.cs
+C:\gitHub\MarcosACarraro\app\AppXamarim\AppXamarim\obj\Debug\netstandard2.0\AppXamarim.csprojAssemblyReference.cache

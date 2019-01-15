@@ -8,6 +8,89 @@
         <Color x:Key="white">#fff</Color>
         <Color x:Key="Transparent">Transparent</Color>
 
+        <Color x:Key="HeaderTextColor">#585858</Color>
+        <Color x:Key="BodyTextColor">#C3C3C3</Color>
+        <Color x:Key="ButtonBackgroundColor">#5992FF</Color>
+
+        <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String"
+            iOS="HelveticaNeue"
+            Android="sans-serif" />
+        <OnPlatform x:Key="LightFontFamily" x:TypeArguments="x:String"
+            iOS="HelveticaNeue-Light"
+            Android="sans-serif-light" />
+        <OnPlatform x:Key="MediumFontFamily" x:TypeArguments="x:String"
+            iOS="HelveticaNeue-Medium"
+            Android="sans-serif-medium" />
+
+        <!-- fonts size -->
+        
+        <!-- fonts -->
+        <Style x:Key="TitleFont" TargetType="Label">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}"/>
+        </Style>
+        <Style x:Key="BodyFont" TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}"/>
+        </Style>
+        <Style x:Key="TagTextFont" TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}"/>
+        </Style>
+        <Style x:Key="StatsNumberFont" TargetType="Label">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="{StaticResource LightFontFamily}"/>
+        </Style>
+        <Style x:Key="StatsCaptionFont" TargetType="Label">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="{StaticResource LightFontFamily}"/>
+        </Style>
+        <Style x:Key="ButtonFont" TargetType="Label">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}"/>
+        </Style>
+
+        <!-- Styles -->
+        <Style x:Key="ProfileNameLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+            <Setter Property="Font" Value="{StaticResource TitleFont}" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+
+        <Style x:Key="ProfileTagLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+            <Setter Property="Font" Value="{StaticResource TagTextFont}" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
+        <Style x:Key="StatsNumberLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="Font" Value="{StaticResource StatsNumberFont}" />
+        </Style>
+
+        <Style x:Key="StatsCaptionLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+            <Setter Property="Margin" Value="0,-5,0,0"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="Font" Value="{StaticResource StatsCaptionFont}" />
+        </Style>
+
+        <Style x:Key="MainBodyLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+            <Setter Property="Font" Value="{StaticResource BodyFont}" />
+        </Style>
+
+        <Style x:Key="FollowButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="HeightRequest" Value="40"/>
+            <Setter Property="BorderRadius" Value="20"/>
+            <Setter Property="Font" Value="{StaticResource ButtonFont}"/>
+        </Style>
+
         <!--frame styles-->
         <Style x:Key="FrameStyle" TargetType="Frame">
             <Setter Property="BorderColor" Value="{StaticResource white}" />

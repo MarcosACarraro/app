@@ -20,7 +20,8 @@ namespace AppXamarim.Service
                 new MenuModel { Id=7, Descricao = "Lotties"},
                 new MenuModel { Id=8, Descricao = "Httpclient ListView"},
                 new MenuModel { Id=9, Descricao = "Carousel"},
-                new MenuModel { Id=10, Descricao = "Grid-LayOut"},
+                new MenuModel { Id=10, Descricao = "QUIZ"},
+                new MenuModel { Id=11, Descricao = "LayOut"},
             };
         }
     }
