@@ -13,8 +13,8 @@ namespace AppXamarim.ViewModel
     public class GridViewModel : BaseViewModel
     {
         public GameService _Game { get; set; }
-        IServiceNavigation _navigation;
-        IServiceMessage _message;
+        readonly IServiceNavigation _navigation;
+        readonly IServiceMessage _message;
 
         public GridViewModel(IServiceNavigation navigation, IServiceMessage message)
         {
@@ -25,18 +25,24 @@ namespace AppXamarim.ViewModel
 
         private void Iniciar()
         {
-            List<QuizQuestion> questions = new List<QuizQuestion>();
-            questions.Add(new QuizQuestion { Question = "Vermelho ou Amarelo", Answer = true, Explanation = "Sem Explicação" });
-            questions.Add(new QuizQuestion { Question = "Verde ou Azul", Answer = false, Explanation = "Sem Explicação" });
-            questions.Add(new QuizQuestion { Question = "Preto ou Branco", Answer = true, Explanation = "Sem Explicação" });
-            questions.Add(new QuizQuestion { Question = "Amarelo ou Cinza", Answer = false, Explanation = "Sem Explicação" });
-            questions.Add(new QuizQuestion { Question = "Rosa ou Verd", Answer = true, Explanation = "Sem Explicação" });
+            List<QuizQuestion> questions = new List<QuizQuestion>
+            {
+                new QuizQuestion { Question = "The Enlightenment was an intellectual movement that celebrated religious faith over reason.", Answer = true, Explanation = "Sem Explicação" },
+                new QuizQuestion { Question = "Vincent van Gogh sold only one painting during his lifetime.", Answer = false, Explanation = "Sem Explicação" },
+                new QuizQuestion { Question = "Fingernails and hair continue to grow after death.", Answer = true, Explanation = "Sem Explicação" },
+                new QuizQuestion { Question = "Russia has the largest area of any country in the world.", Answer = false, Explanation = "Sem Explicação" },
+                new QuizQuestion { Question = "The name Wall Street stems from the row(wall) of banks that greeted visitors to New York City's financial district in the 1800s", Answer = true, Explanation = "Sem Explicação" },
+                new QuizQuestion { Question = "The funny bone is really a bone.", Answer = true, Explanation = "Sem Explicação" },
+                new QuizQuestion { Question = "The mosquito has caused more human deaths than any other creature in history.", Answer = false, Explanation = "Sem Explicação" },
+                new QuizQuestion { Question = "Carl Lewis holds the record for most individual gold medals at the Olympics.", Answer = true, Explanation = "Sem Explicação" }
+            };
+
             _Game = new GameService(questions);
 
             ReSetUI();
         }
 
-        public ICommand btnTrueCommand
+        public ICommand BtnTrueCommand
         {
             get
             {
@@ -47,7 +53,7 @@ namespace AppXamarim.ViewModel
             }
         }
 
-        public ICommand btnFalseCommand
+        public ICommand BtnFalseCommand
         {
             get
             {
@@ -59,7 +65,7 @@ namespace AppXamarim.ViewModel
         }
 
 
-        public ICommand btnNextCommand
+        public ICommand BtnNextCommand
         {
             get
             {
@@ -71,10 +77,16 @@ namespace AppXamarim.ViewModel
                     }
                     else
                     {
-                        //lblResultado.Text = string.Format("Voce acertou {0} de {1}", Game.GetNumbersOfCorrectResponse(), Game.NumberOfQuestions);
+                        string resultado = string.Format("Voce acertou {0} de {1}", _Game.GetNumbersOfCorrectResponse(), _Game.NumberOfQuestions);
+                        Resultado(resultado);
                     }
                 });
             }
+        }
+
+        public async void Resultado(object value)
+        {
+            await _navigation.NavigateToAsync<ReviewPageViewModel>(value);
         }
 
 
@@ -84,9 +96,9 @@ namespace AppXamarim.ViewModel
             LblResponse = string.Empty;
             //lblResultado.Text = string.Empty;
 
-            //btnTrue.Enabled = true;
-            //btnFalse.Enabled = true;
-            //btnNext.Enabled = false;
+            BtnTrueIsEnabled = true;
+            BtnFalseIsEnabled = true;
+            BtnNextIsEnabled = false;
         }
 
         private void OnAnswer(bool answer)
@@ -102,13 +114,10 @@ namespace AppXamarim.ViewModel
 
             LblResponse = _Game.CurrentResponse == _Game.CurrentQuestion.Answer ? "Correct" : "Incorrect";
 
-            //btnTrue.Enabled = false;
-            //btnFalse.Enabled = false;
-            //btnNext.Enabled = true;
-
+            BtnTrueIsEnabled = false;
+            BtnFalseIsEnabled = false;
+            BtnNextIsEnabled = true;
         }
-
-
 
         #region Properties
         private string lblQuestion = "";
@@ -116,6 +125,15 @@ namespace AppXamarim.ViewModel
 
         private string lblResponse = "";
         public string LblResponse { get { return lblResponse; } set { this.Set("LblResponse", ref lblResponse, value); } }
+
+        private bool btnTrueIsEnabled = false;
+        public bool BtnTrueIsEnabled { get { return btnTrueIsEnabled; } set { this.Set("BtnTrueIsEnabled", ref btnTrueIsEnabled, value); } }
+
+        private bool btnFalseIsEnabled = false;
+        public bool BtnFalseIsEnabled { get { return btnFalseIsEnabled; } set { this.Set("BtnFalseIsEnabled", ref btnFalseIsEnabled, value); } }
+
+        private bool btnNextIsEnabled = false;
+        public bool BtnNextIsEnabled { get { return btnNextIsEnabled; } set { this.Set("BtnNextIsEnabled", ref btnNextIsEnabled, value); } }
         #endregion
     }
 }

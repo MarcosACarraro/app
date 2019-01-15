@@ -25,7 +25,8 @@
                 Text="True"
                 TextColor="White"
                 BackgroundColor="#0892D0" 
-                 Command="{Binding btnTrueCommand}">
+                IsEnabled="{Binding BtnTrueIsEnabled}"
+                Command="{Binding BtnTrueCommand}">
         </Button>
         
         <Button x:Name="btnFalse" 
@@ -34,7 +35,8 @@
                 Text="False"
                 TextColor="White"
                 BackgroundColor="#D0082E" 
-                Command="{Binding btnFalseCommand}">
+                IsEnabled="{Binding BtnFalseIsEnabled}"
+                Command="{Binding BtnFalseCommand}">
         </Button>
 
         <Label Grid.Row="2"  Grid.Column="0" Text="{Binding LblResponse}"></Label>
@@ -45,7 +47,8 @@
                 Text="Next" 
                 TextColor="White" 
                 BackgroundColor="#08D046"
-                Command="{Binding btnNextCommand}">
+                IsEnabled="{Binding BtnNextIsEnabled}"
+                Command="{Binding BtnNextCommand}">
         </Button>
     </Grid>
 </ContentPage>
