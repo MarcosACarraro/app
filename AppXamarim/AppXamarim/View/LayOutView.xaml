@@ -16,7 +16,7 @@
         <BoxView BackgroundColor="White" 
                  Grid.Row="0">
         </BoxView>
-        <Image Source="background.png" Aspect="AspectFill"></Image>
+        <Image Grid.Row="0" Source="background.png" Aspect="AspectFill"></Image>
         
         <!--profile image-->
         <StackLayout Grid.Row="1" Padding="0,50,0,0" >
@@ -32,11 +32,11 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <StackLayout Grid.Column="0">
-                <Label Text="33" Style="{StaticResource StatsNumberLabel}"></Label>
+                <Label Text="50" Style="{StaticResource StatsNumberLabel}"></Label>
                 <Label Text="likes" Style="{StaticResource StatsCaptionLabel}"></Label>
             </StackLayout>
             <StackLayout Grid.Column="1">
-                <Label Text="55" Style="{StaticResource StatsNumberLabel}"></Label>
+                <Label Text="{Binding LblFollow}" Style="{StaticResource StatsNumberLabel}"></Label>
                 <Label Text="Following" Style="{StaticResource StatsCaptionLabel}"></Label>
             </StackLayout>
             <StackLayout Grid.Column="2">
@@ -55,8 +55,10 @@
 
         <!--follow button-->
         <Button Grid.Row="4"
-            Text="Follow" Style="{StaticResource FollowButton}" 
-            Margin="20" >
+                Text="Follow" 
+                Style="{StaticResource FollowButton}" 
+                Command="{Binding BtnFollow}"
+                Margin="20" >
         </Button>
 
         <Image Source="profile.jpg" 

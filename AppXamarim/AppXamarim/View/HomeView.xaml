@@ -5,11 +5,12 @@
              x:Class="AppXamarim.View.HomeView">
         <StackLayout Padding="15">
             <flv:FlowListView
-                RowHeight="100"
+                SeparatorColor="Gray"
+                RowHeight="50"
                 HeightRequest="400"
-                FlowColumnCount="2"
+                FlowColumnCount="1"
                 FlowColumnExpand="First"
-                SeparatorVisibility="None"
+                SeparatorVisibility="Default"
                 BackgroundColor="Transparent"
                 HasUnevenRows="False"
                 IsInNativeLayout="False"
@@ -17,17 +18,20 @@
                 FlowItemsSource="{Binding ItensMenu}" >
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
-                        <Frame Style="{StaticResource FrameStyle}">
-                            <Label Text="{Binding Descricao}"
-                                   Style="{StaticResource LabelStyle}"
-                                   HorizontalOptions="Center"
-                                   VerticalTextAlignment="Center"
-                                   FontAttributes="Bold"
-                                   HorizontalTextAlignment="Center"
-                                   FontSize="20">
-                            </Label>
-                        </Frame>
-                    </DataTemplate>
+                    <Grid Padding="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20"></RowDefinition>
+                            <RowDefinition Height="20"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="40"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding Item}" LineBreakMode="TailTruncation"></Label>
+                        <Label Grid.Row="1" Grid.Column="0" Text="{Binding Descricao}" Font="Small"  TextColor="Gray" LineBreakMode="TailTruncation"></Label>
+                        <Image Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Source="pencil.png" Aspect="AspectFill"/>
+                    </Grid>
+                </DataTemplate>
                 </flv:FlowListView.FlowColumnTemplate>
             </flv:FlowListView>
         </StackLayout>

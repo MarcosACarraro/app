@@ -7,6 +7,7 @@ namespace AppXamarim.Model
     public class MenuModel
     {
         public int Id { get; set; }
+        public string Item { get; set; }
         public string Descricao { get; set; }
     }
 }
